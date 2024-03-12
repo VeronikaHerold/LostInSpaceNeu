@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: cf3df0dfd44f441d59703a2d5e83464e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 359
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 3194
+        width: 725
+        height: 276
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6598714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9589d948dea45cc96e651d6844a824
+      internalID: 1755847927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_1
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 3193
+        width: 725
+        height: 276
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6598714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a72b3a68af4f445f93393c4d066794d
+      internalID: 290702597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_2
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 3193
+        width: 725
+        height: 276
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6598714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a7851812a6e4214970dffbae12b861
+      internalID: 354873418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 2867
+        width: 725
+        height: 276
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6598714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0326910e2deea4452a944fb42ad163e4
+      internalID: 1901244954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_4
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 2867
+        width: 725
+        height: 277
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6598714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2765ed68e08d84199974789a73d0c9a4
+      internalID: 182281790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_5
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 2866
+        width: 725
+        height: 276
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6598714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b86acc87dc04debae827e9b5e9149f
+      internalID: 799920951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 2465
+        width: 725
+        height: 276
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6598714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfb09273af5c4b898a2bf8f2da8f051
+      internalID: 2124998683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_7
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 2468
+        width: 725
+        height: 276
+      alignment: 9
+      pivot: {x: 0.25, y: 0.6598714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f1edf2da9024a0191a5e0866ad6f16
+      internalID: -995271504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1946
+        width: 724
+        height: 362
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f392edf8db8464661b47616f88f2496c
+      internalID: 288629331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_9
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1946
+        width: 725
+        height: 362
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97ea387a226a4c1992a495905c5a588
+      internalID: 1651312561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1471
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffc09da00ef44a3986574c205dff03a
+      internalID: 1352213406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_11
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1239
+        width: 725
+        height: 463
+      alignment: 9
+      pivot: {x: 0.25, y: 0.3941414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0432da6beb68a44279dc99172ddb9c11
+      internalID: -1501975825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_12
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1242
+        width: 725
+        height: 603
+      alignment: 9
+      pivot: {x: 0.25008807, y: 0.30077982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ffc2d59e66840aebf6c77fa338ead0
+      internalID: 62110836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 305
+        width: 725
+        height: 603
+      alignment: 9
+      pivot: {x: 0.25, y: 0.3020503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119df4ab1edd64018bc8049ae33142b1
+      internalID: -1234559334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steine_LostInSpace_Final_14
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 303
+        width: 725
+        height: 465
+      alignment: 9
+      pivot: {x: 0.25, y: 0.3941414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13f00081f4ed4eb6ab44a4f7eb74500
+      internalID: 1225170314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Steine_LostInSpace_Final_0: 1755847927
+      Steine_LostInSpace_Final_1: 290702597
+      Steine_LostInSpace_Final_10: 1352213406
+      Steine_LostInSpace_Final_11: -1501975825
+      Steine_LostInSpace_Final_12: 62110836
+      Steine_LostInSpace_Final_13: -1234559334
+      Steine_LostInSpace_Final_14: 1225170314
+      Steine_LostInSpace_Final_2: 354873418
+      Steine_LostInSpace_Final_3: 1901244954
+      Steine_LostInSpace_Final_4: 182281790
+      Steine_LostInSpace_Final_5: 799920951
+      Steine_LostInSpace_Final_6: 2124998683
+      Steine_LostInSpace_Final_7: -995271504
+      Steine_LostInSpace_Final_8: 288629331
+      Steine_LostInSpace_Final_9: 1651312561
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
