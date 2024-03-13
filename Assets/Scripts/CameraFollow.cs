@@ -11,9 +11,14 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform target;
     void Update()
     {
-        Vector3 targetPosition = target.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-
-        
+        if (target != null)
+        {
+            Vector3 targetPosition = target.position + offset;
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        }
+    }
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
     }
 }

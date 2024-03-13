@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     public GameObject death_effect;
 
     public buttonManager buttonManager;
+    public CameraFollow cameraFollow;
     void Start()
     {
 
@@ -39,7 +40,9 @@ public class Player : MonoBehaviour
         this.boxCollider = this.GetComponent<BoxCollider2D>();
         rb2D.gravityScale = 0f;
 
- //       f = GameObject.FindGameObjectWithTag("fragment").GetComponent<FragmentManager>();
+        cameraFollow.SetTarget(transform);
+
+        //       f = GameObject.FindGameObjectWithTag("fragment").GetComponent<FragmentManager>();
     }
 
     // Update is called once per frame
@@ -97,6 +100,11 @@ public class Player : MonoBehaviour
         {
             isJumping = false;
         }
+    }
+    void OnDestroy()
+    {
+        // Entferne das Kamerafolge-Ziel, wenn der Spieler zerstört wird
+        cameraFollow.SetTarget(null);
     }
 
     private void FixedUpdate()
