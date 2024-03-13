@@ -39,7 +39,7 @@ public class buttonManager : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
     }
-        public void MainMenu()
+    public void MainMenu()
     {
         AudioManagerNew.Instance.PlaySFX("Button");
         Time.timeScale = 1f;
@@ -61,6 +61,8 @@ public class buttonManager : MonoBehaviour
     public void Quit()
     {
         AudioManagerNew.Instance.PlaySFX("Button");
+        Debug.Log("Quit");
         Application.Quit();
+        
     }
 }

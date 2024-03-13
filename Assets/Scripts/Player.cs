@@ -139,6 +139,16 @@ public class Player : MonoBehaviour
         return raycastHit.collider != null;
     }
 
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "enemy")
+        {
+            Destroy(gameObject);
+            panel.SetActive(true);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "fragment")

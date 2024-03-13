@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class AudioManagerNew : MonoBehaviour
 {
     public static AudioManagerNew Instance;
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
+    private bool isCutScenePlaying = false;
 
     private void Awake()
     {
@@ -26,7 +28,38 @@ public class AudioManagerNew : MonoBehaviour
     private void Start()
     {
         PlayMusic("Theme");
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "CutScene" && !isCutScenePlaying)
+        {
+            PauseMusic();
+            isCutScenePlaying = true;
+        }
+        else if (scene.name != "CutScene" && isCutScenePlaying)
+        {
+            ResumeMusic();
+            isCutScenePlaying = false;
+        }
+    }
+
+    private void PauseMusic()
+    {
+        musicSource.Pause();
+    }
+
+    private void ResumeMusic()
+    {
+        musicSource.UnPause();
+    }
+
     public void PlayMusic(string name)
     {
         Sound s = Array.Find(musicSounds, x => x.name == name);
