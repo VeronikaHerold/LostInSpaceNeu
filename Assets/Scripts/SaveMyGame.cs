@@ -5,15 +5,12 @@ using BayatGames.SaveGameFree;
 
 public class SaveMyGame : MonoBehaviour
 {
+    private int score = 1;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
-    void Update()
+public void Save()
     {
-        
+        SaveGame.Save<int>("myFile", score);
     }
 }
