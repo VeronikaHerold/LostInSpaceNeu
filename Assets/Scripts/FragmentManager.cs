@@ -1,30 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class FragmentManager : MonoBehaviour
 {
-    public int fragment;
+    private int fragment = 0;
     public TextMeshProUGUI ship;
-    // Start is called before the first frame update
+
     void Start()
     {
-        fragment = PlayerPrefs.GetInt("fragment", 0);
-
+        // Initialisiere das Fragment auf 0
+        fragment = 0;
+        // Aktualisiere den Text zu Beginn
+        UpdateFragmentText();
     }
 
     // Update is called once per frame
     void Update()
     {
-        ship.text = PlayerPrefs.GetInt("fragment", 0).ToString();
-
+        // Hier muss nichts aktualisiert werden, da die Anzahl der Fragmente nicht dynamisch aktualisiert wird
     }
+
     public void Addfragment()
     {
+        // Erhöhe die Anzahl der Fragmente um 1
         fragment++;
-        PlayerPrefs.SetInt("fragment", fragment);
+        // Aktualisiere den Text, um die Änderung anzuzeigen
+        UpdateFragmentText();
+    }
+
+    private void UpdateFragmentText()
+    {
+        // Aktualisiere den Text, um die aktuelle Anzahl der Fragmente anzuzeigen
+        ship.text = fragment.ToString();
     }
 }
