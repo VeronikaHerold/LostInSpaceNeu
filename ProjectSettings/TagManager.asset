@@ -9,6 +9,7 @@ TagManager:
   - spike
   - enemy
   - ground
+  - text
   layers:
   - Default
   - TransparentFX

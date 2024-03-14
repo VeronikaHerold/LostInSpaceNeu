@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
         cameraFollow.SetTarget(transform);
 
-        f = GameObject.FindGameObjectWithTag("fragment").GetComponent<FragmentManager>();
+        f = GameObject.FindGameObjectWithTag("text").GetComponent<FragmentManager>();
     }
 
     void Update()
@@ -131,9 +131,8 @@ public class Player : MonoBehaviour
         }
         if (other.gameObject.tag == "finish")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             AudioManagerNew.Instance.musicSource.Stop();
-            AudioManagerNew.Instance.PlaySFX("Next");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

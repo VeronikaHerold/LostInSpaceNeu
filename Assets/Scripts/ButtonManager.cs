@@ -18,7 +18,7 @@ public class buttonManager : MonoBehaviour
         PausePanel.SetActive(false);
         Time.timeScale = 1f;
         }
-        if (SceneManager.GetActiveScene().name == "MainMenu")
+        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "Level1")
         {
             PausePanel.SetActive(true);
         }
@@ -27,7 +27,9 @@ public class buttonManager : MonoBehaviour
 
     public void PlayGame()
     {
+        AudioManagerNew.Instance.musicSource.Stop();
         AudioManagerNew.Instance.PlaySFX("Button");
+        AudioManagerNew.Instance.PlaySFX("Theme");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void Pause()
@@ -50,7 +52,9 @@ public class buttonManager : MonoBehaviour
     }
     public void MainMenu()
     {
+        AudioManagerNew.Instance.musicSource.Stop();
         AudioManagerNew.Instance.PlaySFX("Button");
+        AudioManagerNew.Instance.PlaySFX("Theme");
         Time.timeScale = 1f;
         isPaused = false;
         SceneManager.LoadScene("MainMenu");
