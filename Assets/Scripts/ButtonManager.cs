@@ -8,6 +8,7 @@ public class buttonManager : MonoBehaviour
     
 {
     public GameObject PausePanel;
+    public GameObject SettingsPanel;
     public static bool isPaused;
     // Start is called before the first frame update
     void Start()
@@ -17,11 +18,17 @@ public class buttonManager : MonoBehaviour
         PausePanel.SetActive(false);
         Time.timeScale = 1f;
         }
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            PausePanel.SetActive(true);
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayGame()
     {
+        AudioManagerNew.Instance.PlaySFX("Button");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void Pause()
     {
@@ -29,6 +36,8 @@ public class buttonManager : MonoBehaviour
         PausePanel.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        SettingsPanel.SetActive(false);
+        AudioManagerNew.Instance.PlaySFX("Button");
     }
 
     public void Continue()
@@ -46,6 +55,7 @@ public class buttonManager : MonoBehaviour
         isPaused = false;
         SceneManager.LoadScene("MainMenu");
     }
+
     public void Restart()
     {
         AudioManagerNew.Instance.PlaySFX("Button");
@@ -56,7 +66,21 @@ public class buttonManager : MonoBehaviour
     public void Settings()
     {
         AudioManagerNew.Instance.PlaySFX("Button");
+        PausePanel.SetActive(false);
+        SettingsPanel.SetActive(true);
+    }
+    public void SettingsMain()
+    {
+        AudioManagerNew.Instance.PlaySFX("Button");
+        SettingsPanel.SetActive(true);
+    }
 
+    public void BackMain()
+    {
+        AudioManagerNew.Instance.PlaySFX("Button");
+        Time.timeScale = 1f;
+        SettingsPanel.SetActive(false);
+        isPaused = false;
     }
     public void Quit()
     {
