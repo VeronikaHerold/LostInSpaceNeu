@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -34,7 +35,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        float direction = Input.GetAxis("Horizontal");
+        float direction = Input.GetAxisRaw("Horizontal");
+
         rb2D.velocity = new Vector2(direction * speed, rb2D.velocity.y);
         if (direction < 0)
         {

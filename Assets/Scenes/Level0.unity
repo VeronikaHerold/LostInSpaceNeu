@@ -22328,6 +22328,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 660142508132830793, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 660142508132830793, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 660142508132830793, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
@@ -22416,6 +22424,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 944651627}
     - target: {fileID: 6437986434541312952, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437986434541312952, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
       propertyPath: cameraFollow
       value: 
       objectReference: {fileID: 519420033}
@@ -22434,6 +22446,18 @@ PrefabInstance:
     - target: {fileID: 6437986434541312952, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
       propertyPath: planetGravity
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437986434541312952, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
+      propertyPath: longJumpHeight
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437986434541312952, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
+      propertyPath: maxJumpDuration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437986434541312952, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
+      propertyPath: shortJumpHeight
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6437986434541312952, guid: 2f1f6c0769ee0a0488fc2fae63c42269, type: 3}
       propertyPath: maxVerticalSpeed
